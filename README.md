@@ -12,8 +12,11 @@ This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source cont
 >We need an ML Engineer/Enthusiast :technologist: to help us solving the issues.
 
 <br><br>
-## Topics:
+## Topic:
 ### Mushroom Edibility Prediction
+- Perform Exploratory Data Analysis on the Dataset.
+- Preprocess the data.
+- Implementation of ML models based on the Dataset Provided.
 
 ### :hammer_and_wrench: SKILLS
 * Machine learning 
@@ -44,8 +47,8 @@ Happy Developing! :innocent:
 ---
   
 ### 🔗 Connect with us
-Get in touch with us on [LinkedIn](https://www.linkedin.com/company/microsoft-student-technical-club-da-iict/) / [Instagram](https://www.instagram.com/mstc_daiict/)
+Get in touch with us on [LinkedIn](https://www.linkedin.com/company/microsoft-student-technical-club-da-iict) / [Instagram](https://www.instagram.com/mstc_daiict)
 
 Any query? Write to us at microsoftclub@daiict.ac.in
 
-[<img src = "https://user-images.githubusercontent.com/112422657/193991648-3b62790c-a1e9-461e-9dff-e93bd045c06d.png" width = "200" />](https://github.com/MSTC-DA-IICT/Hacktoberfest23-Delve-into-ML)
+[<img src = "https://user-images.githubusercontent.com/112422657/193991648-3b62790c-a1e9-461e-9dff-e93bd045c06d.png" width = "200" />](https://github.com/MSTC-DA-IICT/Hacktoberfest24-Mushroom-Edibility-Prediction-ML)
