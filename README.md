@@ -5,48 +5,94 @@ This project is a sincere attempt by MSTC, DA-IICT to encourage Open Source cont
 
 <img src="https://res.cloudinary.com/dbvyvfe61/image/upload/v1619799241/Cicada%203301:%20Reinvented/MSTC_ffmo9v.png" width="10%">
 
----
 
->This is a Machine Learning project for Hactoberfest 2024, maintained by MSTC DA-IICT.
+## Mushroom Edibility Prediction App 🍄
+###### A Machine Learning project for Hactoberfest 2024, maintained by MSTC DA-IICT.
 
->We need an ML Engineer/Enthusiast :technologist: to help us solving the issues.
+This Streamlit-based web application predicts whether a mushroom is edible or poisonous based on a set of biological features. It uses a trained Random Forest Classifier to make predictions from user inputs.
 
-<br><br>
-## Topic:
-### Mushroom Edibility Prediction
-- Perform Exploratory Data Analysis on the Dataset.
-- Preprocess the data.
-- Implementation of ML models based on the Dataset Provided.
+### Features
+- **Cap characteristics**: Shape, surface, color
+- **Bruises**: Presence or absence of bruising
+- **Odor**: Various mushroom odors
+- **Gill details**: Attachment, spacing, size, color
+- **Stalk properties**: Shape, root, surface, color
+- **Veil characteristics**: Type and color
+- **Other attributes**: Ring number, ring type, spore print color, population, and habitat
 
-### :hammer_and_wrench: SKILLS
-* Machine learning 
-* Data visualization
-* Data Analysis
+### How to Run the App Locally
 
+#### 1. Clone the Repository
 
-### :dart: What is expected from you
-* First check `CONTRIBUTING.md` for details on how to work with github.
-* Go to the "`Issues`" and pick the issue best suitable for you. 
-* Read the issue - Understand it well - Leave a comment - start working on the issue.
-* New and creative approches are appreciable.
-* Intiate a `PR`.
+```bash
+git clone https://github.com/yusufokunlola/Hacktoberfest24-Mushroom-Edibility-Prediction-ML
 
+cd Hacktoberfest24-Mushroom-Edibility-Prediction-ML
+```
 
-### :desktop_computer: Helpful Documentations you can learn from
-* [sklearn](https://devdocs.io/scikit_learn/)
-* [pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide)
-* [matplotlib](https://matplotlib.org/stable/plot_types/index.html)
-* [Django](https://docs.djangoproject.com/en/4.0/intro/overview/)
-* [Numpy](https://numpy.org/doc/stable/)
-* [Seaborn](https://seaborn.pydata.org/)
+#### 2. Install Dependencies
 
-Happy Developing! :innocent:
+Ensure that Python and pip are installed on your machine, then run:
 
-<br><br>
+```bash
+pip install -r requirements.txt
+```
 
----
+#### 3. Run the Application
+
+Start the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your default web browser.
+
+### Dataset
+
+The dataset used for training the Random Forest model consists of biological features of mushrooms, including:
+- Cap shape, surface, color
+- Bruises, odor
+- Gill attachment, spacing, size, color
+- Stalk shape, root, surface, color
+- Veil type, color
+- Ring number, type
+- Spore print color
+- Population, habitat
+
+The target variable is the mushroom's edibility: either `edible (0)` or `poisonous (1)`.
+
+### App Overview
+
+- The app's sidebar provides information about the key features used for prediction.
+- The main page allows users to input various mushroom attributes to predict its edibility.
   
-### 🔗 Connect with us
+### Prediction
+
+- Users can input characteristics such as cap shape, gill size, stalk surface, and more.
+- The trained Random Forest Classifier model will then predict whether the mushroom is edible or poisonous.
+- Results are displayed with a user-friendly interface.
+
+### Libraries Used
+
+- `Pandas`: For data manipulation.
+- `Scikit-learn`: For model training and prediction.
+- `Pickle`: For saving and loading the trained model.
+- `Streamlit`: For creating the web interface.
+
+### Model Training
+
+- **Algorithm**: Random Forest Classifier
+- **Data Split**: 70% for training, 30% for testing
+- **Performance**: The model has been trained on a cleaned and preprocessed dataset, and it is pickled for reuse in the app.
+
+### File Structure
+
+- `app.py`: Main script that runs the Streamlit application.
+- `dataset/mushroom.csv`: The dataset used for training and testing the model.
+- `rf_model.pkl`: Pre-trained Random Forest Classifier model saved using pickle.
+
+### 🔗 Connect MSTC DA-IICT
 Get in touch with us on [LinkedIn](https://www.linkedin.com/company/microsoft-student-technical-club-da-iict) / [Instagram](https://www.instagram.com/mstc_daiict)
 
 Any query? Write to us at microsoftclub@daiict.ac.in
